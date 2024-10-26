@@ -1,6 +1,6 @@
 @smoke
 Feature: validating AddPlace API
-
+  @smoke
   Scenario: verify if Place is being successfully added using AddPlaceAPI
     Given Add Place API request is prepared
     When user calls "maps/api/place/add/json" with Post http request
