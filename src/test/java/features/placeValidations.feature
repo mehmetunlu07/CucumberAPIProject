@@ -18,7 +18,7 @@ Feature: validating AddPlace API
       | John | Doe      | Dallas | John |
       | Mary | Does     | Austin | Mary |
 
-  @tag1
+  @tag1@regression
   Scenario: Inserting user information
     Given user is on the info page
     When insert user

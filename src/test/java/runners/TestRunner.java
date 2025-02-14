@@ -1,7 +1,7 @@
 package runners;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features="src/test/java/features",
         glue="stepDefinitions",
         dryRun=false,    //false: real run  true:compiling and tell missing steps
-        tags="@tag1",
+        tags="@regression",
         monochrome = true,
         //strict=true,
         plugin={
@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
 
 )
 
-public class TestRunner  {
-
+//@Listeners(TestListener.class)  // ✅ Attach Test Listener
+public class TestRunner {  // ✅ Extend AbstractTestNGCucumberTests
 
 }
